@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE chapter [
+
+<!ENTITY % crl_ent PUBLIC "crl.ent" "http://www.crifan.com/files/res/docbook/entity/crl.ent">
+%crl_ent;
+
+]>
+
+<chapter    xml:id="do_website_transfer"
+            xmlns="http://docbook.org/ns/docbook"
+            xmlns:xl="http://www.w3.org/1999/xlink"
+            xmlns:xi="http://www.w3.org/2001/XInclude"
+            xmlns:ns5="http://www.w3.org/1998/Math/MathML"
+            xmlns:ns4="http://www.w3.org/1999/xhtml"
+            xmlns:ns3="http://www.w3.org/2000/svg"
+            xmlns:ns="http://docbook.org/ns/docbook">
+<title>真正去操作网站搬家</title>
+
+<para>此处，是在了解了网站搬家之前要知道的概念和做好了准备工作后，开始真正去操作，网站搬家。</para>
+<para></para>
+<para></para>
+
+<tip xml:id="tip.old_post_website_transfer"><title>相关旧帖</title>
+    <para><link xl:href="http://www.crifan.com/change_crifan_com_virtualhost_from_hostmonster_to_bluehost/">【记录】把crifan.com的虚拟主机从HostMonster换到BlueHost的过程</link></para>
+    <para><link xl:href="http://www.crifan.com/after_local_test_wordpress_ok_then_do_transfer_webhosting_to_hawk/">【记录】在本地测试wordpress已成功后去实现在线的wordpress网站搬家(换主机)</link></para>
+</tip>
+
+<sect1 xml:id="steps_for_website_transfer"><title>网站搬家的详细步骤</title>
+    <sect2 xml:id="step_1_create_email"><title>步骤1：创建邮件账户</title>
+        <para><link xl:href="http://www.crifan.com/transfer_webhosting_hawk_cpanel_create_email_account_try_backup_email">【记录】网站搬家之在新虚拟主机hawk的cpanel中新建邮件账户并尝试实现邮件备份</link></para>
+        <para><link xl:href="http://www.crifan.com/transfer_webhosting_goto_hawk_cpanel_create_new_email_account">【记录】网站搬家之去新空间hawk的cpanel中创建对应的邮件账号</link></para>
+    </sect2>
+    
+    <sect2 xml:id="step_2_create_ftp"><title>步骤2：创建ftp账户</title>
+        <para><link xl:href="http://www.crifan.com/transfer_webhosting_hawk_cpanel_create_ftp_account_check_compress_file_format_support">【记录】网站搬家之在新空间hawk的cpanel中创建ftp账户和确认压缩格式支持的类型</link></para>
+    </sect2>
+    
+    <sect2 xml:id="step_3_upload_files"><title>步骤3：上传文件</title>
+        <para><link xl:href="http://www.crifan.com/transfer_webhosting_use_ftp_upload_all_wordpress_file_to_new_host_hawk">【记录】网站搬家之通过ftp上传wordpress文件到新的虚拟空间hawk中</link></para>
+    </sect2>
+    
+    <sect2 xml:id="step_4_create_database"><title>步骤4：创建数据库和用户</title>
+        <para><link xl:href="http://www.crifan.com/transfer_webhosting_use_hawk_cpanel_phpmyadmin_create_database_and_user">【记录】网站搬家之在新空间hawk的cpanel的phpMyAdmin中创建对应的数据库以及用户</link></para>
+    </sect2>
+    
+    <sect2 xml:id="step_5_edit_wp_config"><title>步骤5：修改wordpress的配置</title>
+        <para><link xl:href="http://www.crifan.com/transfer_webhosting_use_hawk_cpanel_file_manager_edit_wordpress_config/">【记录】网站搬家之在新空间hawk的cpanel的文件管理器中修改wordpress的配置</link></para>
+    </sect2>
+    
+    <sect2 xml:id="step_6_access_homepage"><title>步骤6：验证主页地址访问是否正常</title>
+        <para><link xl:href="http://www.crifan.com/transfer_webhosting_goto_hawk_check_wordpress_homepage_normal_display">【记录】网站搬家之先去新空间hawk中验证一下wordpress主页是否可以正常显示</link></para>
+    </sect2>
+    
+    <sect2 xml:id="step_7_update_dns"><title>步骤7：更新DNS</title>
+        <para><link xl:href="http://www.crifan.com/transfer_webhosting_godaddy_update_dns_nameserver_let_point_new_host_ip">【记录】网站搬家之去godaddy中更新DNS配置使得域名解析为当前新空间的IP</link></para>
+    </sect2>
+</sect1>
+
+<sect1 xml:id="common_error_during_transfer"><title>网站搬家期间常见的错误及解决办法</title>
+    <para>网站搬家期间，可能出现的一些常见错误和解决办法：</para>
+    <para></para>
+    <sect2 xml:id="error_upload_file_size_too_large"><title>您可能正在上传很大的文件，请参考文档来寻找解决办法</title>
+        <para><link xl:href="http://www.crifan.com/phpmyadmin_import_mysql_error_you_are_probably_uploading_very_large_file/">【已解决】phpMyAdmin中导入mysql数据库文件时出错：您可能正在上传很大的文件，请参考文档来寻找解决办法</link></para>
+    </sect2>
+    <sect2 xml:id="error_drop_table_if_exists_wp_commentmeta"><title>DROP TABLE IF EXISTS `wp_commentmeta`</title>
+        <para><link xl:href="http://www.crifan.com/phpmyadmin_wordpress_mysql_table_structure_wp_commentmeta_drop_table_if_exists_wp_commentmeta">【已解决】phpMyAdmin导入Wordpress的MySQL数据库出错：表的结构 `wp_commentmeta`，DROP TABLE IF EXISTS `wp_commentmeta`</link></para>
+    </sect2>
+    <sect2 xml:id="error_403_permission_denied"><title>访问主页出错：403 Permission Denied</title>
+        <para><link xl:href="http://www.crifan.com/transfer_webhosting_wordpress_homepage_403_permission_denied_you_do_not_have_permission_for_this_request/">【已解决】wordpress网站搬家期间，访问临时主页地址出现错误：403 Permission Denied，You do not have permission for this request</link></para>
+    </sect2>
+    <sect2 xml:id="error_build_database_connection"><title>建立数据库连接时出错</title>
+        <para></para>
+        <para><link xl:href="http://www.crifan.com/transfer_webhosting_wordpress_homepage_error_when_build_connection_with_database/">【已解决】wordpress网站搬家期间，访问临时主页地址出现错误：建立数据库连接时出错</link></para>
+    </sect2>
+    <sect2 xml:id="error_homepage_404"><title>访问主页出现404错误</title>
+        <para><link xl:href="http://www.crifan.com/transfer_webhosting_wordpress_homepage_error_404/">【已解决】wordpress网站搬家期间，访问临时主页地址出现404错误</link></para>
+    </sect2>
+    <sect2 xml:id="error_dns_not_hosted_here"><title>GoDaddy的DNS Manager的Not hosted here</title>
+        <para><link xl:href="http://www.crifan.com/godaddy_dns_manager_not_hosted_here_hostmonster_edit_a_record/">【已解决】GoDaddy的DNS Manager的Not hosted here的问题 + 到Hostmonster中修改A Record</link></para>
+    </sect2>
+</sect1>
+
+</chapter>

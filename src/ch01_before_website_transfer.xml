@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE chapter [
+
+<!ENTITY % crl_ent PUBLIC "crl.ent" "http://www.crifan.com/files/res/docbook/entity/crl.ent">
+%crl_ent;
+
+]>
+
+<chapter    xml:id="before_website_transfer"
+            xmlns="http://docbook.org/ns/docbook"
+            xmlns:xl="http://www.w3.org/1999/xlink"
+            xmlns:xi="http://www.w3.org/2001/XInclude"
+            xmlns:ns5="http://www.w3.org/1998/Math/MathML"
+            xmlns:ns4="http://www.w3.org/1999/xhtml"
+            xmlns:ns3="http://www.w3.org/2000/svg"
+            xmlns:ns="http://docbook.org/ns/docbook">
+<title>网站搬家之前要了解的概念和要做的事情</title>
+
+<para></para>
+<para></para>
+
+<sect1 xml:id="concept_before_transfer"><title>网站搬家之前需要了解的概念</title>
+    <para>搬家之前，有很多基本概念需要了解的。</para>
+    <para>包括，所谓的网站搬家，此处指的是，从一个虚拟主机，换到另外一个虚拟主机。</para>
+    <para>不懂的可参考：</para>
+    <para><link xl:href="http://www.crifan.com/what_is_wordpress_blog_move/">【整理】什么是 wordpress博客搬家/wordpress搬家/博客搬家</link></para>
+    <para></para>
+    <para>以及一些背景知识：</para>
+    <para><link xl:href="http://www.crifan.com/unit_of_ttl_time_to_live/">【整理】关于TTL的单位</link></para>
+</sect1>
+
+<sect1 xml:id="things_before_transfer"><title>网站搬家之前要做的事情</title>
+    <para></para>
+    <para>网站搬家之前，最好还是本地先测试一把，看看是否正常。如果正常了，再继续去搬家。可参考：</para>
+    <para><link xl:href="http://www.crifan.com/website_hosting_transfer_test_local_wordpress_work_or_not">【记录】在wordpress完整的文件都导出到本地后，本地测试在线导出的wordpress是否正常工作</link></para>
+    <para><link xl:href="http://www.crifan.com/after_local_test_wordpress_ok_then_do_transfer_webhosting_to_hawk/">【记录】在本地测试wordpress已成功后去实现在线的wordpress网站搬家(换主机)</link></para>
+    <para></para>
+    <para>搬家之前，当然先要将旧空间里面的内容导出来。</para>
+    <para>方式有很多种。</para>
+    <para>有的虚拟空间商，提供工具帮你搬家，则可以利用。比如：</para>
+    <para><link xl:href="http://www.crifan.com/use_hawk_cpanel_r1soft_restore_backups_to_backup_website/">【整理】利用hawk的cpanel中的R1Soft Restore Backups实现网站备份</link></para>
+    <para></para>
+    <para></para>
+    <para></para>
+</sect1>
+
+<para></para>
+<para></para>
+<para></para>
+
+</chapter>

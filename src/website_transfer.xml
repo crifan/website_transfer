@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding="utf-8"?>
+
+<!DOCTYPE book
+[
+
+<!ENTITY cur_book_name      "website_transfer" >
+<!ENTITY publish_date       "2013-08-01" >
+<!ENTITY release_version    "1.0" >
+
+<!ENTITY copyrith_year "2013" >
+<!ENTITY entity_common_multi_format     SYSTEM  "../../entity_common_multi_format.xml">
+<!ENTITY entity_common_publish_info     SYSTEM  "../../entity_common_publish_info.xml">
+]>
+
+<book version="5.0"
+    xmlns="http://docbook.org/ns/docbook"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    
+    xml:lang="zh_CN">
+
+<info>
+    <title>网站搬家详解</title>
+    <subtitle></subtitle>
+    <keywordset>
+        <keyword>网站搬家</keyword>
+        <keyword>详解</keyword>
+    </keywordset>
+
+    <abstract>
+        <para>本文主要介绍网站搬家的过程，涉及到搬家之前，需要了解的很多基本概念，如何具体操作网站搬家，其中有哪些注意事项，常见的问题的现象和解决办法。</para>
+        &entity_common_multi_format;
+    </abstract>
+
+    <revhistory>
+        <revision>
+            <revnumber>&release_version;</revnumber>
+            <date>&publish_date;</date>
+            <revremark>
+                <orderedlist>
+                    <listitem>把之前教程的地址整理过来</listitem>
+                </orderedlist>
+            </revremark>
+            <authorinitials>crl</authorinitials>
+        </revision>
+    </revhistory>
+
+    &entity_common_publish_info;
+</info>
+
+<xi:include href="preface.xml" />
+<xi:include href="ch01_before_website_transfer.xml" />
+<xi:include href="ch02_do_website_transfer.xml" />
+<xi:include href="ch03_after_website_transfer.xml" />
+<xi:include href="reference.xml" />
+
+</book>
